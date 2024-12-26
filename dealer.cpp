@@ -1,6 +1,6 @@
 #include "../Downloads/dealer.hpp"
 using namespace std;
-
+//создание функций
 namespace dealer
 {
     int get_random_card()
@@ -69,12 +69,12 @@ namespace dealer
     void print_dealer_cards(vector<int> cards, int dealer_total)
     {
 
-        cout << " арты дилера : \n";
+        cout << " Карты дилера : \n";
 
         for (const int card : cards)
         {
             dealer::display_card_value(card);
         }
-        cout << "—умма дилера: " << dealer_total << '\n';
+        cout << "Сумма дилера: " << dealer_total << '\n';
     }
 }
